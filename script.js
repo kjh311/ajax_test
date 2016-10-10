@@ -1,3 +1,9 @@
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+
+
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -15,4 +21,6 @@ function loadDoc() {
 
 $('#jquery-button').click(function(){
   $('#jquery-demo').load('jquery-text.txt');
+});
+
 });
