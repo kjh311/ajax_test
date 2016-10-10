@@ -13,6 +13,6 @@ function loadDoc() {
 
 
 
-$('#jquery-button').click(function(event) {
+$('#jquery-button').click(function(){
   $('#jquery-demo').load('jquery-text.txt');
 });
