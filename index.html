@@ -8,5 +8,22 @@
 </head>
 <body>
 
+  <div id="demo"><h2>The magic of AJAX will change this script! </h2></div>
+
+  <button type="button" onclick="loadDoc()">Change Text</button>
+
+  <script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "text.txt", true);
+  xhttp.send();
+}
+</script>
+
 </body>
 </html>
